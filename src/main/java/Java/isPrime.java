@@ -5,13 +5,20 @@ public class isPrime {
         System.out.println(isPrime(3));
     }
 
-    static public String isPrime(int a){
-        String status = "";
-        if (a < 0 || a == 1){
-            status = "not Prime";
-        } else if (a == 2 && a % 2 == 0) {
-            status = "Prime";
+    static public boolean isPrime(int a) {
+        int kFirst = 0;
+        int kSecond = 0;
+
+        if (a == 2 || a == 3) {
+            return true;
+        } else if (a <= 0 || a % 2 == 0 || a % 3 == 0) {
+            return false;
         }
-        return status;
+
+        if (a > 3) {
+            kFirst = 6 * a - 1;
+            kSecond = 6 * a + 1;
+        }
+        return a % kFirst != 0 || a % kSecond != 0;
     }
 }
