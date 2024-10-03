@@ -1,6 +1,6 @@
-package Java.HW2.school.management;
+package Java.week_2.school.management;
 
-import Java.HW2.school.Person;
+import Java.week_2.school.Person;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,35 +15,35 @@ public class Student extends Person {
         this.studentId = studentId;
     }
 
-    public void enrolledCourses(String [] courses){
+    public void enrolledCourses(String[] courses) {
         enrolledCourses.addAll(Arrays.asList(courses));
         updateTuition();
     }
 
-    public void enrolledCourses(String course){
+    public void enrolledCourses(String course) {
         enrolledCourses.add(course);
         updateTuition();
     }
 
-    private void setTuition(double tuition){
+    private void setTuition(double tuition) {
         this.tuition = tuition;
     }
 
-    public void updateTuition(){
+    public void updateTuition() {
         //$500 per course
         double updatedTuition = 500 * enrolledCourses.size();
         setTuition(updatedTuition);
     }
 
-    public double getTuition(){
+    public double getTuition() {
         return tuition;
     }
 
-    public void dropCourse(String course){
+    public void dropCourse(String course) {
         boolean removed = enrolledCourses.removeIf(enrolledCourses -> enrolledCourses.equals(course));
         updateTuition();
 
-        if (!removed){
+        if (!removed) {
             System.out.println("Student was not enrolled in " + course + ", thus it can't be removed.");
         }
     }

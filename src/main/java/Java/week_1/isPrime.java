@@ -1,4 +1,4 @@
-package Java;
+package Java.week_1;
 
 public class isPrime {
     public static void main(String[] args) {

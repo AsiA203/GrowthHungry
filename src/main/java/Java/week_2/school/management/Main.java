@@ -1,4 +1,4 @@
-package Java.HW2.school.management;
+package Java.week_2.school.management;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Leah's Tuition: " + student3.getTuition());
 
         System.out.println("_________________________________________");
-        CourseManager courseManager = new CourseManager();
+        Java.week_2.school.management.CourseManager courseManager = new Java.week_2.school.management.CourseManager();
         courseManager.addStudent(student1);
         courseManager.addStudent(student2);
         courseManager.addStudent(student3);

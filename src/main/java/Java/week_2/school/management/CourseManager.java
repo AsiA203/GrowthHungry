@@ -1,4 +1,4 @@
-package Java.HW2.school.management;
+package Java.week_2.school.management;
 
 import java.util.ArrayList;
 
@@ -30,10 +30,10 @@ public class CourseManager {
     }
 
     //TODO 1
-    public void removeStudentsCourses(int studentId){
+    public void removeStudentsCourses(int studentId) {
     }
 
     //TODO 2
-    public void addStudentsCourses(int studentId){
+    public void addStudentsCourses(int studentId) {
     }
 }

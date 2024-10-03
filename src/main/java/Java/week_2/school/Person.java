@@ -1,4 +1,4 @@
-package Java.HW2.school;
+package Java.week_2.school;
 
 public class Person {
     public String name;
@@ -9,7 +9,7 @@ public class Person {
         this.age = age;
     }
 
-    public void displayDetails(){
+    public void displayDetails() {
         System.out.println("Name: " + this.name + ", Age:" + this.age);
     }
 }

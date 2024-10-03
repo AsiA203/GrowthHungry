@@ -1,4 +1,4 @@
-package Java;
+package Java.week_1;
 
 import java.util.HashMap;
 
