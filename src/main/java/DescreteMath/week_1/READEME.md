@@ -1,4 +1,6 @@
-Week 1 - DM Homework Report
----------------------------------------------------
-___
-Minimal Homework
+Status: 
+- Required (minimal) - In Progress 🟡
+
+Assignment, Week 1
+----------------------------------------
+Link: https://academy.growthhungry.life/unit/view/id:2988
