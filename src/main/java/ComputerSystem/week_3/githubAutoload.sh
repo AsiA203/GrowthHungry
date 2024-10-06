@@ -11,21 +11,22 @@ currentFileCount=0
 newAddedFileNames=()
 newAddedFileCount=()
 
-contains() {
-    local element="$1"
-    shift
-    for item in "$@"; do
-        if [[ "$item" == "$element" ]]; then
-            return 0
-        fi
-    done
-    return 1
-}
+# contains() {
+#     local element="$1"
+#     shift
+#     for item in "$@"; do
+#         if [[ "$item" == "$element" ]]; then
+#             return 0
+#         fi
+#     done
+#     echo "I'm getting used"
+#     return 1
+# }
 
 push () {
 	cd /Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem
 	git add .
-	git commit -m "New file/files was added to Computer System Folder"
+	git commit -m "New was added to Computer System Folder"
 	git push
 }
 
