@@ -25,7 +25,7 @@ newAddedFileCount=()
 
 push () {
 	cd /Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem
-	git add .
+	git add ComputerSystem/**/*
 	git commit -m "New was added to Computer System Folder"
 	git push
 }
