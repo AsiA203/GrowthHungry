@@ -14,8 +14,7 @@ newAddedFileCount=()
 push () {
     path="/Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem"
     find "$path" -type d -empty -exec touch {}/.gitkeep \;
-	cd "$path"
-	git add "$path"/**/*
+	git add "$path"
 	git commit -m "New changes added to Computer System Folder"
 	git push origin main
 }
