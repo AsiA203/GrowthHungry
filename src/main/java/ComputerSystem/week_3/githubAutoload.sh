@@ -11,43 +11,42 @@ currentFileCount=0
 newAddedFileNames=()
 newAddedFileCount=()
 
-# contains() {
-#     local element="$1"
-#     shift
-#     for item in "$@"; do
-#         if [[ "$item" == "$element" ]]; then
-#             return 0
-#         fi
-#     done
-#     echo "I'm getting used"
-#     return 1
-# }
-
 push () {
-	cd /Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem
-	git add ComputerSystem/**/*
-	git commit -m "New was added to Computer System Folder"
-	git push
+    path="/Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem"
+    find "$path" -type d -empty -exec touch {}/.gitkeep \;
+	cd "$path"
+	git add "$path"/**/*
+	git commit -m "New changes added to Computer System Folder"
+	git push origin main
 }
 
 currentFilesCheck(){
-
-    for item in "${currentFileNames[@]}"; do
-        if [[ ! " ${previusFileNames[*]} " =~ " $item " ]]; then
-            newAddedFileNames+=("$item")
-            newAddedFileCount=$((newAddedFileCount + 1))
+    for array1 in "${currentFileNames[@]}"; do
+          found=false
+        for array2 in "${previusFileNames[@]}"; do
+        if [ "$array1" == "$array2" ]; then
+          found=true
+        break  # Exit the inner loop if a match is found
+        fi
+    done
+    # If no match was found, print the item from array1
+        if [ "$found" == false ]; then
+            newAddedFileNames+=("$array1")
+            newAddedFileCount+=1
+            echo "new file found"
         fi
     done
 
-    echo "Fun2"
-    echo " status ${newAddedFileCount[@]}"
+echo "Fun2"
+echo "status names: ${newAddedFileNames[@]} "
+echo "status count: ${newAddedFileCount[@]}"
 
-    if [[ "${newAddedFileCount[@]}" > "0" ]]; then
-    	push
-    	newAddedFileNames=()
-    	newAddedFileCount=0
-    	"I should push"
-    fi
+#git commit and push
+if [[ "$newAddedFileCount" -gt 0  ]]; then
+    push
+    newAddedFileNames=()
+    newAddedFileCount=0
+fi 
 }
 
 cd /Users/aseliaazimkanova/Desktop/GrowthHungryFiles/GrowthHungry/src/main/java/ComputerSystem
@@ -60,4 +59,3 @@ echo "${currentFileNames[@]}"
 echo "${currentFileCount[@]}"
 currentFilesCheck 
 echo "${newAddedFileNames[@]}"
-
