@@ -1,6 +1,6 @@
 Status:
-- Required (minimal) - Not Started 🔴
-- Additional (optional) - Not Started 🔴
+- Required (minimal) - COMPLETED 🟢
+- Additional (optional) - In Progress 🟡 (1/2 done)
 
 Assignment, Week 3
 ----------------------------------------
