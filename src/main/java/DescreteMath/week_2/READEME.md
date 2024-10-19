@@ -1,5 +1,5 @@
 Status: 
-- Required (minimal) - In Progress 🟡 (5/20)
+- Required (minimal) - COMPLETED 🟢
 
 Assignment, Week 2
 ----------------------------------------
