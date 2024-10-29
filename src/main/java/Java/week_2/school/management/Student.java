@@ -1,50 +1,34 @@
-package Java.week_2.school.management;
-
-import Java.week_2.school.Person;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class Student extends Person {
-    public int studentId;
-    private ArrayList<String> enrolledCourses = new ArrayList<>();
-    private double tuition;
-
-    public Student(String name, int age, int studentId) {
-        super(name, age);
-        this.studentId = studentId;
-    }
-
-    public void enrolledCourses(String[] courses) {
-        enrolledCourses.addAll(Arrays.asList(courses));
-        updateTuition();
-    }
-
-    public void enrolledCourses(String course) {
-        enrolledCourses.add(course);
-        updateTuition();
-    }
-
-    private void setTuition(double tuition) {
-        this.tuition = tuition;
-    }
-
-    public void updateTuition() {
-        //$500 per course
-        double updatedTuition = 500 * enrolledCourses.size();
-        setTuition(updatedTuition);
-    }
-
-    public double getTuition() {
-        return tuition;
-    }
-
-    public void dropCourse(String course) {
-        boolean removed = enrolledCourses.removeIf(enrolledCourses -> enrolledCourses.equals(course));
-        updateTuition();
-
-        if (!removed) {
-            System.out.println("Student was not enrolled in " + course + ", thus it can't be removed.");
-        }
-    }
-}
+//package Java.week_2.school.management;
+//
+//import Java.week_2.school.Person;
+//import Java.week_4.Course;
+//
+//import java.util.HashMap;
+//
+//public class Student extends Person {
+//    public int studentId;
+//    private HashMap<Course, Integer> grades;
+//
+//    public Student(String name, int age, int studentId) {
+//        super(name, age);
+////        this.studentId = studentId;
+//        this.grades = new HashMap<>();
+//    }
+//
+//    public void addGrade(Course course, int grade) {
+//        grades.put(course, grade);
+//    }
+//
+//
+//    public String getStudentName() {
+//        return name;
+//    }
+//
+//
+//    public void printGradeReport() {
+//        System.out.println("Grade Report for " + name);
+//        for (Course course : grades.keySet()) {
+//            System.out.println("Course: " + course.getCourseName() + ", Grade: " + grades.get(course));
+//        }
+//    }
+//}

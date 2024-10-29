@@ -12,4 +12,8 @@ public class Person {
     public void displayDetails() {
         System.out.println("Name: " + this.name + ", Age:" + this.age);
     }
+
+    public String getStudentName(){
+        return name;
+    }
 }

@@ -1,7 +1,6 @@
 Status:
 - Required (minimal) - COMPLETED 🟢
-- Additional (optional) - In Progress 🟡 (1/2 done)
 
-Assignment, Week 3
+Assignment, Week 4
 ----------------------------------------
-Link: https://academy.growthhungry.life/unit/view/id:3040
+Link: https://academy.growthhungry.life/unit/view/id:3057
