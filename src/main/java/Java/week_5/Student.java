@@ -15,16 +15,11 @@ public class Student {
         }
     }
 
-    //Custom exception
-    public void InvalidAgeException() throws Exception {
-        if (age < 18 || age > 60){
-            throw new Exception("Invalid Age Exception");
-        }
+    public String getName() {
+        return name;
     }
 
-    public void InvalidNameException() throws Exception{
-        if (name == null || name.equals("")){
-            throw new Exception("Invalid Name Exception");
-        }
+    public int getAge() {
+        return age;
     }
 }
