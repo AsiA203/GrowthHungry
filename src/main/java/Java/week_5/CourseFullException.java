@@ -1,13 +1,9 @@
 package Java.week_5;
 
 class CustomExceptions extends Exception{
-    Student student;
-    CourseRegistration courseRegistration;
 
-    public void InvalidAgeException() throws Exception {
-        if (student.getAge() < 18 || student.getAge() > 60){
-            throw new Exception("Invalid Age Exception");
-        }
+    public void InvalidAgeException() extends {
+
     }
 
     public void InvalidNameException() throws Exception{
