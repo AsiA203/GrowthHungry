@@ -28,16 +28,16 @@ public class Problem_1 {
             currentIndex++;
         }
 
-//        //ChatGPT
-//        for (int i = 0; i < array.length; i++){
-//            int resultOfMultiplications = 1;
-//            for (int j = 0; j < array.length; j++){
-//                if (i != j){
-//                    resultOfMultiplications *= array[j];
-//                }
-//            }
-//            result[i] = resultOfMultiplications;
-//        }
+        //ChatGPT
+        for (int i = 0; i < array.length; i++){
+            int resultOfMultiplications = 1;
+            for (int j = 0; j < array.length; j++){
+                if (i != j){
+                    resultOfMultiplications *= array[j];
+                }
+            }
+            result[i] = resultOfMultiplications;
+        }
 
         return result;
     }
