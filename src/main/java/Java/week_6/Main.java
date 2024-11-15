@@ -12,7 +12,7 @@ public class Main {
         intList.add(4);
         intList.add(2);
         // Sort by natural order
-//        GenericSorting.sort(intList, Comparator.naturalOrder());
+        GenericSorting.sort(intList, Comparator.naturalOrder());
         System.out.println("Sorted integer list: " + intList);
 
 
@@ -21,8 +21,7 @@ public class Main {
         stringList.add("Alice");
         stringList.add("Bob");
         // Sort by custom comparator (e.g., descending order)
-//        GenericSorting.sort(stringList, Comparator.comparing(String::length).reversed());
+        GenericSorting.sort(stringList, Comparator.comparing(String::length).reversed());
         System.out.println("Sorted string list (descending order): " + stringList);
     }
 }
-
