@@ -3,7 +3,7 @@ package Java.week_6;
 import java.util.Comparator;
 import java.util.List;
 
-//TODO: try to understand it more
+//TODO: try to understand it more, come back in 1 month and try again
 public class GenericSorting {
 
     public static <T> void sort(List<T> list, Comparator<T> comparator) {
