@@ -6,7 +6,7 @@ public class Fibonacci {
     static HashMap<Integer, Long> cache = new HashMap<>();
 
     public static void main(String[] args) {
-        fibonacciSequence(100);
+        fibonacciSequence(10);
     }
 
     static public void fibonacciSequence(int a) {
