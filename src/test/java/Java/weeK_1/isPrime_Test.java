@@ -14,7 +14,8 @@ public class isPrime_Test {
         assertAll(
                 () -> assertTrue(isPrime(3)),
                 () -> assertTrue(isPrime(5)),
-                () -> assertTrue(isPrime(7))
+                () -> assertTrue(isPrime(7)),
+                () -> assertTrue(isPrime(11))
         );
     }
 }
