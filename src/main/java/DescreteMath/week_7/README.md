@@ -1,5 +1,6 @@
 Status:
-- Required (minimal) - In Progress 
+- Required (minimal) - DONE
+- Recommended (optional) - In Progress
 
 Assignment, Week 8
 ----------------------------------------
