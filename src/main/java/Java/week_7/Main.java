@@ -1,2 +1,7 @@
-package Java.week_7;public class Main {
+package Java.week_7;
+
+public class Main {
+    public static void main(String [] args){
+
+    }
 }
