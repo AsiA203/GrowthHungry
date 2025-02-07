@@ -1,6 +1,5 @@
 Status: 
-- Required (minimal) - In Progress
+- Required (minimal) - COMPLETED 🟢
 
-Assignment, Week 1
+Assignment, Week 14
 ----------------------------------------
-Link: https://academy.growthhungry.life/unit/view/id:2988
