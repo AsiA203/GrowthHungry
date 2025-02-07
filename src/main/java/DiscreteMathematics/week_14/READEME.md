@@ -1,5 +1,5 @@
 Status: 
-- Required (minimal) - COMPLETED 🟢
+- Required (minimal) - COMPLETED 🟢🟢
 
 Assignment, Week 14
 ----------------------------------------
