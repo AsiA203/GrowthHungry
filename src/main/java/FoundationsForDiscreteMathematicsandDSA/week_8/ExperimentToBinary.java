@@ -1,4 +1,4 @@
-package DescreteMath.week_8;
+package FoundationsForDiscreteMathematicsandDSA.week_8;
 
 import java.math.BigInteger;
 
